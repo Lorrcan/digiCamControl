@@ -153,8 +153,7 @@ namespace CameraControl.Layouts
                             ServiceProvider.Settings.SelectedBitmap.DisplayImage = null;
                         }
                         if (File.Exists(fileItem.FileName))
-                            FileSystem.DeleteFile(fileItem.FileName, UIOption.OnlyErrorDialogs,
-                                                  RecycleOption.SendToRecycleBin);
+                            FileSystem.DeleteFile(fileItem.FileName, UIOption.OnlyErrorDialogs, RecycleOption.SendToRecycleBin);
                         fileItem.RemoveThumbs();
                         ServiceProvider.Settings.DefaultSession.Files.Remove(fileItem);
                     }

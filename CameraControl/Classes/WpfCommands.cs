@@ -57,6 +57,7 @@ namespace CameraControl.Classes
         /// The show live view command.
         /// </value>
         public static RelayCommand<ICameraDevice> ShowLiveViewCommand { get; private set; }
+        public static RelayCommand<ICameraDevice> OpenStopMotionController { get; private set; }
 
         public static RelayCommand<ICameraDevice> DevicePropertyCommand { get; private set; }
 
@@ -71,6 +72,10 @@ namespace CameraControl.Classes
             DevicePropertyCommand =
                 new RelayCommand<ICameraDevice>(
                     x => ServiceProvider.WindowsManager.ExecuteCommand(WindowsCmdConsts.CameraPropertyWnd_Show, x));
+            OpenStopMotionController =
+                new RelayCommand<ICameraDevice>(
+                    device => ServiceProvider.WindowsManager.ExecuteCommand(WindowsCmdConsts.StopMotion_Show, device),
+                    device => (device != null && device.GetCapability(CapabilityEnum.LiveView)));
         }
 
         public static void SelectCamera(ICameraDevice cameraDevice)

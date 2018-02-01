@@ -105,5 +105,8 @@ namespace CameraControl.Core.Classes
         public const string ViewExplorer = "ViewExplorer";
         public const string RefreshDisplay = "RefreshDisplay";
         public const string Restore = "Restore";
+        public const string StopMotion_Show = "StopMotion_Show";
+        public const string StopMotion_Hide = "StopMotion_Hide";
+
     }
 }

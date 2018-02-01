@@ -156,7 +156,10 @@
             </StackPanel>
         </DockPanel>
         </materialDesign:Card>
-        <ListBox Grid.Row="2" VirtualizingStackPanel.IsVirtualizing="True"  Name="ImageLIstBox" ItemsSource="{Binding Source={x:Static Member=Core:ServiceProvider.Settings}, Path=DefaultSession.Files, IsAsync=True}" BorderThickness="0" IsSynchronizedWithCurrentItem="True" Focusable="False" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.VerticalScrollBarVisibility="Disabled" >
+        <ListBox Grid.Row="2" VirtualizingStackPanel.IsVirtualizing="True"  Name="ImageLIstBox" 
+                 ItemsSource="{Binding Source={x:Static Member=Core:ServiceProvider.Settings}, Path=DefaultSession.Files, IsAsync=True}" 
+                 BorderThickness="0" IsSynchronizedWithCurrentItem="True" Focusable="False" 
+                 ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.VerticalScrollBarVisibility="Disabled" >
             <i:Interaction.Behaviors>
                 <classes:HorizontalScrollBehavior />
             </i:Interaction.Behaviors>

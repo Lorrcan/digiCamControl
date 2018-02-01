@@ -149,6 +149,12 @@
                         Visibility="{Binding Source={x:Static Member=Core:ServiceProvider.Settings}, Path=UseWebserver, Converter={StaticResource BooleanToVisibilityConverter1}}">
                 <materialDesign:PackIcon Kind="Qrcode" Height="35" Width="35" />
             </Button>
+            <Button ToolTip="{T:TranslateExtension LabelStopMotion}" Height="40" Name="but_stopmotion" Width="40" Margin="4" Style="{DynamicResource MaterialDesignFloatingActionLightButton}"
+                    Command="{Binding Source={x:Static Member=myClasess:WpfCommands.OpenStopMotionController}}" 
+                    CommandParameter="{Binding Source={x:Static Member=Core:ServiceProvider.DeviceManager}, Path=SelectedCameraDevice}"
+                    Visibility="{Binding Source={x:Static Member=Core:ServiceProvider.Branding}, Path=ShowStopMotionButtonMainWindow, Converter={StaticResource BooleanToVisibilityConverter1}}">
+                <materialDesign:PackIcon Kind="Theater" Height="35" Width="35" />
+            </Button>
             <ItemsControl ItemsSource="{Binding Source={x:Static Member=Core:ServiceProvider.PluginManager}, Path=ToolBarPlugins}" >
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>

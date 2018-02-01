@@ -1087,6 +1087,5 @@ namespace CameraControl
         {
             ServiceProvider.WindowsManager.ExecuteCommand(WindowsCmdConsts.RefreshDisplay);
         }
-
     }
 }

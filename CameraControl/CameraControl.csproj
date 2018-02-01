@@ -412,6 +412,7 @@
     <Compile Include="ViewModel\BarcodeViewModel.cs" />
     <Compile Include="ViewModel\BracketingViewModel.cs" />
     <Compile Include="ViewModel\LayoutViewModel.cs" />
+    <Compile Include="ViewModel\StopMotionViewModel.cs" />
     <Compile Include="ViewModel\LiveViewViewModel.cs" />
     <Compile Include="ViewModel\MainMenuViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
@@ -470,6 +471,7 @@
     <Compile Include="windows\LiveViewFullScreenWnd.xaml.cs">
       <DependentUpon>LiveViewFullScreenWnd.xaml</DependentUpon>
     </Compile>
+    <Compile Include="windows\StopMotionManager.cs" />
     <Compile Include="windows\LiveViewManager.cs" />
     <Compile Include="windows\LiveViewWnd.xaml.cs">
       <DependentUpon>LiveViewWnd.xaml</DependentUpon>
@@ -515,6 +517,9 @@
     </Compile>
     <Compile Include="windows\StatisticsWnd.xaml.cs">
       <DependentUpon>StatisticsWnd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="windows\StopMotionWindow.xaml.cs">
+      <DependentUpon>StopMotionWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="windows\TagSelectorWnd.xaml.cs">
       <DependentUpon>TagSelectorWnd.xaml</DependentUpon>
@@ -756,6 +761,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="windows\StatisticsWnd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="windows\StopMotionWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

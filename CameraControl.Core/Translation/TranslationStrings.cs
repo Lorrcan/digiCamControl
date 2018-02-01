@@ -91,6 +91,7 @@ namespace CameraControl.Core.Translation
 
         public static string ButtonLocateLogFile = "Locate log file";
 
+        public static string LabelStopMotion= "Stop motion";
         public static string LabelInterfaceLanguage = "Interface language ";
         public static string LabelDisableDriver = "Disable native drivers (not recommended)";
         public static string LabelTheme = "Theme ";
@@ -518,7 +519,7 @@ namespace CameraControl.Core.Translation
         public static string LabelErrorSimpleStackingFocusLock = "The focus is locked. Simple focus stacking does not require focus lock, unlock it first to start.";
         public static string LabelLowerCaseExtension = "Lower case extension";
         public static string LabelOverlayTransparency = "Transparency";
-        public static string LabelOverlayUseLastCaptured = "Use last captured";
+        public static string LabelOverlayUseLastCaptured = "Use last captured photos:";
         public static string LabelMinimizeToTryIcon = "Minimize to tray icon";
         public static string LabelStartMinimized = "Start minimized";
         public static string LabelStartupWithWindows = "Start when Windows starts";

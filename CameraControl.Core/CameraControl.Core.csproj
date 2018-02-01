@@ -279,6 +279,7 @@
     <Compile Include="Classes\HelpProvider.cs" />
     <Compile Include="Classes\InputArguments.cs" />
     <Compile Include="Classes\KeyboardHook.cs" />
+    <Compile Include="Classes\StopMotionSettings.cs" />
     <Compile Include="Classes\LiveviewSettings.cs" />
     <Compile Include="Classes\MessageEventArgs.cs" />
     <Compile Include="Classes\MiniWebServer.cs" />
